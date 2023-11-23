@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PDF Reader</string>
+
+    <!--    Splash Activity-->
+    <string name="pdf_reader">Lecteur PDF</string>
+
+    <!--    Welcome Activity-->
+    <string name="welcome_to">Bienvenue à</string>
+    <string name="welcome_pdf_reader"><font color='#E5252A'>PDF</font> Lecteur</string>
+    <string name="welcome_desc">vous permet d\'afficher des fichiers PDF, de créer des fichiers PDF, de collaborer, de réviser et de signer des fichiers PDF</string>
+    <string name="welcome_check_msg">En commençant, vous acceptez notre</string>
+    <string name="get_started">Commencer</string>
+    <string name="policy_privacy"><font color='#E5252A'><u>politique de confidentialité</u></font></string>
+    <string name="please_accept_terms">Veuillez accepter les termes et la politique de confidentialité</string>
+
+    <!--    Language Activity-->
+    <string name="language">Langue</string>
+    <string name="default_">Défaut</string>
+    <string name="english">Anglais</string>
+    <string name="spanish">espagnol</string>
+    <string name="french">Francias</string>
+    <string name="german">Duosch</string>
+    <string name="italian">Italien</string>
+    <string name="portuguese">Portugais</string>
+    <string name="korean">coréen</string>
+    <string name="system_language">Langue du système</string>
+    <string name="spanish_">Espagnol</string>
+    <string name="french_">Français</string>
+    <string name="german_">Allemand</string>
+    <string name="italian_">Italien</string>
+    <string name="portuguese_">Portugais</string>
+    <string name="korean_">Coréen</string>
+
+    <!--    Bottom Navigation -->
+    <string name="home">Maison</string>
+    <string name="recent">Récent</string>
+    <string name="favorite">Préféré</string>
+
+    <!--    Drawer Menu -->
+    <string name="select_files">Sélectionnez les fichiers</string>
+    <string name="settings">Paramètres</string>
+    <string name="rate_us">Évaluez nous</string>
+    <string name="share_app">Partager l\'application</string>
+    <string name="nav_open">Ouvrir</string>
+    <string name="nav_close">Fermer</string>
+
+    <!--    Tab Layout -->
+    <string name="all">TOUT</string>
+    <string name="pdf">PDF</string>
+    <string name="word">MOT</string>
+    <string name="excel">EXCELLER</string>
+    <string name="ppt">PPT</string>
+    <string name="txt">SMS</string>
+
+    <!--    Setting Activity -->
+    <string name="general">Général</string>
+    <string name="save_path">Enregistrer le chemin</string>
+    <string name="english_us">Anglais (États-Unis)</string>
+    <string name="other">Autre</string>
+    <string name="invite_friends">Inviter des amis</string>
+    <string name="feedback">Retour</string>
+    <string name="_v_">V</string>
+    <string name="privacy_policy">politique de confidentialité</string>
+
+    <!--    Sign List Activity -->
+    <string name="sign_list">Liste des signes</string>
+    <string name="add_sign">Ajouter un signe</string>
+    <string name="no_sign_available">Aucun signe disponible</string>
+    <string name="tap_to_add_sign">Appuyez sur le bouton "Ajouter" pour \n créer une signature</string>
+    <string name="want_to_save_your_changes">Vous souhaitez enregistrer vos modifications dans un document PDF ?</string>
+    <string name="save_document">Enregistrer le document</string>
+    <string name="save_pdf">Enregistrer le PDF</string>
+    <string name="enter_file_name">Entrez le nom du fichier</string>
+
+    <!--    Fragments -->
+    <string name="documents">Documents</string>
+    <string name="give_permission"><u>Donner la permission</u></string>
+
+    <!--    Dialog Sort -->
+    <string name="sort_by">Trier par</string>
+    <string name="title">Titre</string>
+    <string name="type">Taper</string>
+    <string name="date">Date</string>
+    <string name="size">Taille</string>
+    <string name="ascending">Ascendant</string>
+    <string name="descending">Descendant</string>
+    <string name="cancel">Annuler</string>
+    <string name="done">Fait</string>
+
+    <!--    Dialog Menu -->
+    <string name="print">Imprimer</string>
+    <string name="save_as_jpeg">Enregistrer au format JPEG</string>
+    <string name="rename">Renommer</string>
+    <string name="share">Partager</string>
+    <string name="delete">Supprimer</string>
+    <string name="details">Détails</string>
+
+    <!--    Alert Dialog -->
+    <string name="confirmation_message">Voulez-vous supprimer ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="save">Sauvegarder</string>
+
+    <!--    Details Dialog -->
+    <string name="name">Nom</string>
+    <string name="file_path">Chemin du fichier:</string>
+    <string name="size_">Taille:</string>
+    <string name="permission">Autorisation:</string>
+    <string name="date_">Date:</string>
+    <string name="ok">D\'accord</string>
+    <string name="read_write">Lire écrire</string>
+
+    <!--    Empty Text -->
+    <string name="currently_no_data">Actuellement Aucune donnée</string>
+
+    <!--    Common Text -->
+    <string name="_mb_">Mo</string>
+    <string name="_kb_">Ko</string>
+
+    <!--    Rating Screen -->
+    <string name="oh_no">Oh non!</string>
+    <string name="we_you_like_too">Nous vous aimons aussi !</string>
+    <string name="would_you_like_app">Souhaitez-vous une application ?</string>
+    <string name="enjoy_this_app">Si vous appréciez cette application, prenez un moment pour la noter sur Google Playstore.</string>
+    <string name="feed_back">RETOUR</string>
+    <string name="rate_now">ÉVALUEZ MAINTENANT</string>
+    <string name="the_best_we_can_get">Le meilleur que nous puissions obtenir :)</string>
+
+    <!--    Toast Message -->
+    <string name="cannot_open_pdf">Impossible d\'ouvrir le PDF, soit le PDF est corrompu, soit il est protégé par mot de passe</string>
+    <string name="something_wrong_in_sign">Une erreur s\'est produite lors de la signature du document PDF. Veuillez réessayer.</string>
+    <string name="storage_permission_denied">Autorisation de stockage refusée</string>
+    <string name="error">Erreur</string>
+    <string name="invalid_page_number">Numéro de page invalide</string>
+    <string name="invalid_tab_position">Position de tabulation invalide</string>
+    <string name="save_pdf_images">Enregistrer des images PDF</string>
+    <string name="please_wait">S\'il vous plaît, attendez…</string>
+    <string name="convert_pdf_to_image">Convertir un PDF en image</string>
+
+    <string name="document">Document</string>
+    <string name="cant_read_pdf">Impossible de lire le fichier pdf</string>
+
+    <string name="page_1_80">Page -/—</string>
+    <string name="search_text">Rechercher du texte</string>
+    <string name="more">Plus</string>
+    <string name="add_text">Ajouter du texte</string>
+    <string name="add_signature">Ajouter une signature</string>
+    <string name="go_to_page">Aller à la page</string>
+    <string name="enter_a_page_number">Entrez un numéro de page</string>
+    <string name="go">Aller</string>
+    <string name="file_name">Nom de fichier</string>
+    <string name="enter_name">Entrez le nom</string>
+    <string name="replace">Remplacer</string>
+    <string name="undo">annuler</string>
+    <string name="redo">Refaire</string>
+    <string name="text_here">TEXTE ICI</string>
+    <string name="exit_app">Voulez-vous quitter l\'application ?</string>
+    <string name="add_something">Ajoute quelque chose</string>
+    <string name="please_give_ratings">Veuillez donner des notes</string>
+    <string name="file_can_not_open">Le fichier ne peut pas être ouvert</string>
+
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+</resources>

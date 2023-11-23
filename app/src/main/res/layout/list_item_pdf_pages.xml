@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivWatchedPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/ic_back"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/ivCurrentPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/ivUnWatchedPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_fill_star"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/ic_watched_page"
+                android:visibility="visible"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_current_page"
+                android:visibility="visible"
+                />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="5dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_un_watched_page"
+                android:visibility="visible"
+                />
+        </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/lineView"
+            android:layout_width="15dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/relCircle" />
+
+        <TextView
+            android:id="@+id/pageNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relMain"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="3dp" />
+</RelativeLayout>

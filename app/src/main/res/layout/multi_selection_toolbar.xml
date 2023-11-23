@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clHome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgCommon"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivMultiCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tvPdfReader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="1 Selected"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMultiCancel"
+        app:layout_constraintEnd_toStartOf="@+id/llMultiSelect"
+        app:layout_constraintStart_toEndOf="@+id/ivMultiCancel"
+        app:layout_constraintTop_toTopOf="@+id/ivMultiCancel"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llMultiSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMultiCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivMultiCancel">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bg_radio_button" />
+
+        <TextView
+            android:id="@+id/tvMultiAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/all"
+            android:textColor="@color/bottom_gray"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

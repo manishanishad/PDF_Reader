@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgDialog"
+    android:padding="@dimen/_20sdp">
+
+    <LinearLayout
+        android:id="@+id/llAddText"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:background="@drawable/bg_light_red"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/llAddSignature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:src="@drawable/ic_add_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/add_text"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/view_line"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/llAddSignature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/llAddText" />
+
+    <LinearLayout
+        android:id="@+id/llAddSignature"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:background="@drawable/bg_light_red"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/llAddText"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:src="@drawable/ic_add_signature" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/add_signature"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

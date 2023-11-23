@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="@string/home"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/selectFile"
+        android:icon="@drawable/ic_select_files"
+        android:visible="false"
+        android:title="@string/select_files" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/rateUs"
+        android:icon="@drawable/ic_drawer_star"
+        android:title="@string/rate_us" />
+
+    <item
+        android:id="@+id/shareApp"
+        android:icon="@drawable/ic_drawer_share"
+        android:title="@string/share_app" />
+
+</menu>

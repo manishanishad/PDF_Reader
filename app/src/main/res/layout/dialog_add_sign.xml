@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/tvAddSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_sign"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <!--<LinearLayout
+        android:id="@+id/etAddSign"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_light_red"
+        android:backgroundTint="@color/gray_bg"
+        android:orientation="vertical"
+        android:visibility="gone" />-->
+
+    <com.pdfreader.pdfviewer.sign.pdf.SignatureView
+        android:id="@+id/signatureView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_light_red"
+        android:backgroundTint="@color/gray_bg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llSignLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/ivSignBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignYellow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <ImageView
+            android:id="@+id/ivSignYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignRed"
+            app:layout_constraintStart_toEndOf="@+id/ivSignBlack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/yellow" />
+
+        <ImageView
+            android:id="@+id/ivSignRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignBlue"
+            app:layout_constraintStart_toEndOf="@+id/ivSignYellow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivSignBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignPink"
+            app:layout_constraintStart_toEndOf="@+id/ivSignRed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/blue" />
+
+        <ImageView
+            android:id="@+id/ivSignPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignOrange"
+            app:layout_constraintStart_toEndOf="@+id/ivSignBlue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/pink" />
+
+        <ImageView
+            android:id="@+id/ivSignOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignSkyBlue"
+            app:layout_constraintStart_toEndOf="@+id/ivSignPink"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/orange" />
+
+        <ImageView
+            android:id="@+id/ivSignSkyBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toStartOf="@+id/ivSignGreen"
+            app:layout_constraintStart_toEndOf="@+id/ivSignOrange"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/blue_sky" />
+
+        <ImageView
+            android:id="@+id/ivSignGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_sign_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivSignSkyBlue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/green" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/bg_button_unselected"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/dialog_text"
+            android:textSize="@dimen/_12sdp"
+            app:chainUseRtl="true"
+            app:layout_constraintEnd_toStartOf="@+id/btnSignDone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/bg_button_unselected"
+            android:backgroundTint="@color/red"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSignCancel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

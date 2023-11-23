@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">PDF Reader</string>
+
+    <!--    Splash Activity-->
+    <string name="pdf_reader">PDF Reader</string>
+
+    <!--    Welcome Activity-->
+    <string name="welcome_to">Welcome to</string>
+    <string name="welcome_pdf_reader"><font color='#E5252A'>PDF</font> Reader</string>
+    <string name="welcome_desc">let you view PDFs, create PDF files, collaborate and review, and sign PDF files</string>
+    <string name="welcome_check_msg">By starting, you accept our</string>
+    <string name="get_started">Get Started</string>
+    <string name="policy_privacy"><font color='#E5252A'><u> Privacy Policy</u></font></string>
+    <string name="please_accept_terms">Please accept terms and privacy policy</string>
+
+    <!--    Language Activity-->
+    <string name="language">Language</string>
+    <string name="default_">Default</string>
+    <string name="english">English</string>
+    <string name="spanish">Español</string>
+    <string name="french">Françias</string>
+    <string name="german">Duetsch</string>
+    <string name="italian">Italiano</string>
+    <string name="portuguese">Português</string>
+    <string name="korean">한국어</string>
+    <string name="system_language">System Language</string>
+    <string name="spanish_">Spanish</string>
+    <string name="french_">French</string>
+    <string name="german_">German</string>
+    <string name="italian_">Italian</string>
+    <string name="portuguese_">Portuguese</string>
+    <string name="korean_">Korean</string>
+
+    <!--    Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="recent">Recent</string>
+    <string name="favorite">Favorite</string>
+
+    <!--    Drawer Menu -->
+    <string name="select_files">Select Files</string>
+    <string name="settings">Settings</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!--    Tab Layout -->
+    <string name="all">ALL</string>
+    <string name="pdf">PDF</string>
+    <string name="word">WORD</string>
+    <string name="excel">EXCEL</string>
+    <string name="ppt">PPT</string>
+    <string name="txt">TXT</string>
+
+    <!--    Setting Activity -->
+    <string name="general">General</string>
+    <string name="save_path">Save path</string>
+    <string name="english_us">English(US)</string>
+    <string name="other">Other</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="feedback">Feedback</string>
+    <string name="_v_">V</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!--    Sign List Activity -->
+    <string name="sign_list">Sign List</string>
+    <string name="add_sign">Add Sign</string>
+    <string name="no_sign_available">No sign available</string>
+    <string name="tap_to_add_sign">Tap the “Add Button” to \n create a signature</string>
+    <string name="want_to_save_your_changes">Want to save your changes to PDF document?</string>
+    <string name="save_document">Save Document</string>
+    <string name="save_pdf">Save PDF</string>
+    <string name="enter_file_name">Enter File Name</string>
+
+    <!--    Fragments -->
+    <string name="documents">Documents</string>
+    <string name="give_permission"><u>Give Permission</u></string>
+
+    <!--    Dialog Sort -->
+    <string name="sort_by">Sort by</string>
+    <string name="title">Title</string>
+    <string name="type">Type</string>
+    <string name="date">Date</string>
+    <string name="size">Size</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+
+    <!--    Dialog Menu -->
+    <string name="print">Print</string>
+    <string name="save_as_jpeg">Save as JPEG</string>
+    <string name="rename">Rename</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+
+    <!--    Alert Dialog -->
+    <string name="confirmation_message">Are you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+
+    <!--    Details Dialog -->
+    <string name="name">Name</string>
+    <string name="file_path">File Path:</string>
+    <string name="size_">Size:</string>
+    <string name="permission">Permission:</string>
+    <string name="date_">Date:</string>
+    <string name="ok">Okay</string>
+    <string name="read_write">Read &amp; Write</string>
+
+    <!--    Empty Text -->
+    <string name="currently_no_data">Currently No data</string>
+
+    <!--    Common Text -->
+    <string name="_mb_">MB</string>
+    <string name="_kb_">KB</string>
+
+    <!--    Rating Screen -->
+    <string name="oh_no">Oh, No!</string>
+    <string name="we_you_like_too">We like you too!</string>
+    <string name="would_you_like_app">Would you like app?</string>
+    <string name="enjoy_this_app">If you enjoy this app, please take a moment to rate it on Google Playstore.</string>
+    <string name="feed_back">FEEDBACK</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="the_best_we_can_get">The best we can get :)</string>
+
+    <!--    Toast Message -->
+    <string name="cannot_open_pdf">Cannot open PDF, either PDF is corrupted or password protected</string>
+    <string name="something_wrong_in_sign">Something went wrong while Signing PDF document, Please try again</string>
+    <string name="storage_permission_denied">Storage Permission Denied</string>
+    <string name="error">Error</string>
+    <string name="invalid_page_number">Invalid page number</string>
+    <string name="invalid_tab_position">Invalid tab position</string>
+    <string name="save_pdf_images">Save pdf images</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="convert_pdf_to_image">Convert PDF to Image</string>
+
+    <string name="document">Document</string>
+    <string name="cant_read_pdf">Can\'t read pdf file</string>
+
+    <string name="page_1_80">Page -/—</string>
+    <string name="search_text">Search Text</string>
+    <string name="more">More</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_signature">Add Signature</string>
+    <string name="go_to_page">Go to page</string>
+    <string name="enter_a_page_number">Enter a page no</string>
+    <string name="go">Go</string>
+    <string name="file_name">File Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="replace">Replace</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="text_here">TEXT HERE</string>
+    <string name="exit_app">Are you want to exit app?</string>
+    <string name="add_something">Add something</string>
+    <string name="please_give_ratings">Please give ratings</string>
+    <string name="file_can_not_open">File cannot be open</string>
+
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+</resources>

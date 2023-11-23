@@ -1,0 +1,185 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.pdfreader.pdfviewer.sign"
+        minSdk 23
+        targetSdk 33
+        versionCode 4
+        versionName "1.4"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        setProperty("archivesBaseName", "PDF_Reader")
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //ndk.abiFilters 'armeabi-v7a', 'arm64-v8a'
+    }
+
+    splits {
+        abi {
+            include "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    packagingOptions {
+        exclude 'com/itextpdf/io/font/cmap_info.txt'
+        exclude 'com/itextpdf/io/font/cmap/*'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    kapt {
+        correctErrorTypes true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true
+            minifyEnabled true
+            multiDexEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            /*resValue "string", "app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "native_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "inter_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admob_app_open_id", "ca-app-pub-3940256099942544/3419835294"
+            resValue "string", "admob_banner_id", ""
+            resValue "string", "pdfViewerScreenNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "dashboardScreenNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "pageEditorScreenNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "searchScreenNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "documentListNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "splashScreenNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "splashInterstitialId", "ca-app-pub-3940256099942544/1033173712"*/
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs {
+                srcDir 'libs'
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: '*.so')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.31"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //ViewModel
+    def lifecycle_version = "2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    //Timber Library
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    //implementation 'com.google.android.gms:play-services-ads:20.2.0'
+
+    //Gson Library
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // pdf viewer
+    //implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.nimbusds:nimbus-jose-jwt:4.23'
+    implementation 'com.madgag.spongycastle:core:1.54.0.0'
+    implementation 'com.madgag.spongycastle:prov:1.54.0.0'
+    implementation 'com.madgag.spongycastle:pkix:1.54.0.0'
+    implementation 'com.madgag.spongycastle:pg:1.54.0.0'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.54'
+    implementation project(path: ':office')
+
+    //for pdf editor
+    implementation 'com.itextpdf:itextpdf:5.5.13'
+
+    def work_version = "2.8.1"
+
+    // (Java only)
+    implementation("androidx.work:work-runtime:$work_version")
+
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:$work_version")
+
+    // optional - RxJava2 support
+    implementation("androidx.work:work-rxjava2:$work_version")
+
+    // optional - GCMNetworkManager support
+    implementation("androidx.work:work-gcm:$work_version")
+
+    // optional - Test helpers
+    androidTestImplementation("androidx.work:work-testing:$work_version")
+
+    // optional - Multiprocess support
+    implementation "androidx.work:work-multiprocess:$work_version"
+
+    // Rating Bar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    implementation 'com.google.android.gms:play-services-vision:15.0.2'
+
+    //FireBase
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-crashlytics-ktx")
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.3.1'
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_90sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@drawable/bg_white"
+    android:orientation="horizontal">
+
+    <com.pdfreader.pdfviewer.sign.pdf.SignatureView
+        android:id="@+id/signatureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center">
+
+    </com.pdfreader.pdfviewer.sign.pdf.SignatureView>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_close" />
+
+    <!--<FrameLayout
+        android:id="@+id/cancelFrame"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_oval_transparent">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close" />
+
+    </FrameLayout>-->
+
+</FrameLayout>

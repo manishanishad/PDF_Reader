@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clPdfView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgCommon">
+
+    <ImageView
+        android:id="@+id/ivPdfIcon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_pdf"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPdfSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPdfName" />
+
+    <TextView
+        android:id="@+id/tvPdfName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rbSelected"
+        app:layout_constraintStart_toEndOf="@+id/ivPdfIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="New Document.Pdf" />
+
+    <TextView
+        android:id="@+id/tvPdfDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/ivPdfIcon"
+        app:layout_constraintStart_toStartOf="@+id/tvPdfName"
+        app:layout_constraintTop_toBottomOf="@+id/tvPdfName"
+        tools:text="18-07-2023" />
+
+    <ImageView
+        android:id="@+id/ivPdfDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/ic_single_date"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPdfDate"
+        app:layout_constraintStart_toEndOf="@+id/tvPdfDate"
+        app:layout_constraintTop_toTopOf="@+id/tvPdfDate" />
+
+    <TextView
+        android:id="@+id/tvPdfSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/ivPdfDot"
+        app:layout_constraintTop_toTopOf="@+id/tvPdfDate"
+        tools:text="425 KB" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/rbSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_radio_button"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPdfSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPdfName" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/view_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvPdfDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvPdfDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
